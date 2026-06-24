@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dextc store - Top-Up Game & Voucher Resmi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigasi -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Dextc<span>store</span></a>
+            <div class="nav-links">
+                <a href="index.html">Beranda</a>
+                <a href="#kategori">Populer</a>
+                <a href="#bantuan">Bantuan</a>
+            </div>
+            <button id="menuToggle" class="menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <!-- Pencarian -->
+    <section class="search-section">
+        <div class="container">
+            <h2>Top-Up Cepat, Aman & Langsung Masuk</h2>
+            <p>Pilih game favorit, masukkan ID, bayar, selesai!</p>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Cari game atau produk...">
+                <button>Cari</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daftar Produk -->
+    <section id="kategori" class="products-section">
+        <div class="container">
+            <h3 class="section-title">Produk Populer</h3>
+            <div class="products-grid" id="productsContainer">
+
+                <div class="product-card" onclick="bukaDetail('Mobile Legends')">
+                    <img src="logo ml.jpg" alt="Mobile Legends">
+                    <h4>Mobile Legends</h4>
+                    <p>Diamond</p>
+                    <span class="btn-pilih">Pilih</span>
+                </div>
+
+                <div class="product-card" onclick="bukaDetail('Free Fire')">
+                    <img src="logo ff.jpg" alt="Free Fire">
+                    <h4>Free Fire</h4>
+                    <p>Diamond</p>
+                    <span class="btn-pilih">Pilih</span>
+                </div>
+
+                <div class="product-card" onclick="bukaDetail('PUBG Mobile')">
+                    <img src="logo pubg .jpg" alt="PUBG Mobile">
+                    <h4>PUBG Mobile</h4>
+                    <p>UC</p>
+                    <span class="btn-pilih">Pilih</span>
+                </div>
+
+                <div class="product-card" onclick="bukaDetail('Roblox')">
+                    <img src="logo roblox.jpg" alt="Roblox">
+                    <h4>Roblox</h4>
+                    <p>Robux</p>
+                    <span class="btn-pilih">Pilih</span>
+                </div>
+
+                <div class="product-card" onclick="bukaDetail('Valorant')">
+                    <img src="valo.jpg" alt="Valorant">
+                    <h4>Valorant</h4>
+                    <p>Points</p>
+                    <span class="btn-pilih">Pilih</span>
+                </div>
+
+                <div class="product-card" onclick="bukaDetail('Steam Wallet')">
+                    <img src="steam.jpg" alt="Steam Wallet">
+                    <h4>Steam Wallet</h4>
+                    <p>Saldo Resmi</p>
+                    <span class="btn-pilih">Pilih</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Cara Beli -->
+    <section class="guide-section">
+        <div class="container">
+            <h3 class="section-title">Langkah Pembelian</h3>
+            <div class="steps">
+                <div class="step"><span>1</span><p>Pilih Produk</p></div>
+                <div class="step"><span>2</span><p>Isi ID & Server</p></div>
+                <div class="step"><span>3</span><p>Pilih Nominal</p></div>
+                <div class="step"><span>4</span><p>Bayar & Langsung Masuk</p></div>
+            </div>
+        </div>
+    </section>
+    <section class="detail-section">detail.html</section>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Dextc store | Situs contoh untuk pembelajaran</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
