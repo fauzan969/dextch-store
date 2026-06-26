@@ -1,0 +1,283 @@
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+:root {
+    --utama: #16007b;
+    --gelap: #1a1a2e;
+    --abu: #f5f7fa;
+    --teks: #333;
+    --putih: #ffffff;
+}
+
+body {
+    background-color: var(--abu);
+    color: var(--teks);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigasi */
+.navbar {
+    background-color: var(--putih);
+    box-shadow: 0 2px 8px rgb(16, 2, 108);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--gelap);
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--utama);
+}
+
+.nav-links a {
+    margin-left: 2rem;
+    text-decoration: none;
+    color: var(--teks);
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--utama);
+}
+
+.menu-btn {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Bagian Pencarian */
+.search-section {
+    background: linear-gradient(135deg, var(--utama), #0066cc);
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.search-section h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.search-section p {
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+.search-box {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 0.9rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.search-box button {
+    padding: 0.9rem 1.5rem;
+    background-color: var(--gelap);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* Bagian Produk */
+.products-section {
+    padding: 3rem 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: var(--gelap);
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1.2rem;
+}
+
+.product-card {
+    background: var(--putih);
+    padding: 1.2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgb(17, 2, 104);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgb(17, 2, 115);
+}
+
+.product-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    margin-bottom: 0.8rem;
+    object-fit: cover;
+}
+
+.product-card h4 {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.product-card p {
+    font-size: 0.85rem;
+    color: #1f0373;
+    margin-bottom: 1rem;
+}
+
+.btn-pilih {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--utama);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.btn-pilih:hover {
+    background-color: #020062;
+}
+
+/* Cara Pembelian */
+.guide-section {
+    background: var(--putih);
+    padding: 3rem 0;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    text-align: center;
+}
+
+.step {
+    width: 180px;
+}
+
+.step span {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: var(--utama);
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 50%;
+    margin-bottom: 0.8rem;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--gelap);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+}
+
+.form-topup{
+    max-width:500px;
+    margin:30px auto;
+    background:#020a84;
+    padding:25px;
+    border-radius:15px;
+}
+
+.form-topup h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input,select{
+    padding:12px;
+    border:none;
+    border-radius:8px;
+}
+
+form button{
+    background:#6a00ff;
+    color:white;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+form button:hover{
+    background:#5200c9;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+        background:#240097;
+}            
+
+
+/* Responsif HP */
+@media(max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .menu-btn {
+        display: block;
+    }
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+}
