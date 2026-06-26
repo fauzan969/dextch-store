@@ -7,63 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <center>
+    <section class="form-topup">
+        <h2>Form Top Up</h2>
 
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="logo">Dextc<span>store</span></a>
-            <div class="nav-links"><a href="index.html">← Kembali</a></div>
-        </div>
-    </nav>
+        <form>
+            <input type="text" placeholder="Masukkan User ID" required>
 
-    <section class="detail-section">
-        <div class="container">
-            <div class="detail-card">
-                <h2 id="namaGame"></h2>
+            <select>
+                <option>Pilih Diamond</option>
+                <option>86 Diamond = 50 K</option>
+                <option>172 Diamond = 100 K</option>
+                <option>257 Diamond = 200 k</option>
+                <option>344 Diamond =300 K</option>
+            </select>
 
-                <!-- Kolom ID & Server -->
-                <div class="form-group">
-                    <label>ID Akun</label>
-                    <input type="text" id="idAkun" placeholder="Masukkan ID akun kamu">
-                </div>
-                <div class="form-group" id="serverGroup" style="display: none;">
-                    <label>Server / Zona ID</label>
-                    <input type="text" id="serverAkun" placeholder="Masukkan nomor server/zona">
-                </div>
+            <select>
+                <option>Metode Pembayaran</option>
+                <option>DANA</option>
+                <option>OVO</option>
+                <option>GoPay</option>
+                <option>QRIS</option>
+            </select>
 
-                <!-- Pilihan Nominal + Harga -->
-                <h4>Pilih Nominal</h4>
-                <div class="nominal-grid" id="daftarNominal"></div>
-
-                <!-- Metode Pembayaran -->
-                <h4>Metode Pembayaran</h4>
-                <div class="metode-bayar">
-                    <label class="opsi-bayar"><input type="radio" name="bayar" value="DANA"> DANA</label>
-                    <label class="opsi-bayar"><input type="radio" name="bayar" value="GoPay"> GoPay</label>
-                    <label class="opsi-bayar"><input type="radio" name="bayar" value="OVO"> OVO</label>
-                    <label class="opsi-bayar"><input type="radio" name="bayar" value="ShopeePay"> ShopeePay</label>
-                    <label class="opsi-bayar"><input type="radio" name="bayar" value="BCA"> BCA Transfer</label>
-                    <label class="opsi-bayar"><input type="radio" name="bayar" value="Indomaret"> Indomaret</label>
-                    <label class="opsi-bayar"><input type="radio" name="bayar" value="Alfamart"> Alfamart</label>
-                </div>
-
-                <!-- Ringkasan Pesanan -->
-                <div class="ringkasan">
-                    <h4>Ringkasan Pesanan</h4>
-                    <p>Produk: <span id="rProduk">-</span></p>
-                    <p>ID / Server: <span id="rIdServer">-</span></p>
-                    <p>Nominal: <span id="rNominal">-</span></p>
-                    <p><strong>Total Bayar: <span id="rHarga">Rp 0</span></strong></p>
-                </div>
-
-                <button class="btn-bayar" onclick="lanjutPesan()">Lanjut Pembayaran</button>
-            </div>
-        </div>
+            <button type="submit">Bayar Sekarang</button>
+        </form>
     </section>
-
-    <footer class="footer">
-        <div class="container"><p>&copy; 2026 Dextc store</p></div>
-    </footer>
-
+    </center>
     <script src="script.js"></script>
 </body>
 </html>
